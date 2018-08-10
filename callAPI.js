@@ -13,17 +13,17 @@ module.exports = async function callAPI({
     })
 
     
-    console.log('URL: ' + process.env.apiURI)
+    // console.log('URL: ' + process.env.apiURI)
     //console.log("body: " + appName + replyURLs + owners)
-    console.log("requestbody: " + requestbody)
+    // console.log("requestbody: " + requestbody)
 
     try {
         const response = await request.post(apiURI, { body: requestbody });
-        console.log("svar: " + response)
+        // console.log("svar: " + response)
         return response;
 
     } catch (e) {
-        console.log(e)
+        //console.log(e)
     }
 
 

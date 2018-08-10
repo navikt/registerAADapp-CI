@@ -3,7 +3,7 @@ const callAPI = require('./callAPI');
 const readInput = require('./readInput')
 
 const input = readInput();
-console.log(input)
+// console.log(input)
 
 async function dostuff() {
     for (var i = 0, len = input.Applications.length; i < len; i++) {
