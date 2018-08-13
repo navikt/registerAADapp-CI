@@ -4,15 +4,16 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:10.0.0
+      - image: northgrove/registeraadapp-ci
 
     steps:
       - checkout
+      - run: node ./app/app.js
 
-      - attach_workspace:
-          at: .    
+  
 
-    docker:
-      - image: northgrove/registeraadapp-ci
+  
+
           
 
     
