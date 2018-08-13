@@ -5,7 +5,7 @@ jobs:
       # specify the version you desire here
       - image: northgrove/registeraadapp-ci
     steps:
-      - run: node app.js
+      - run: docker run registeraadapp-ci
 
     #working_directory: github.com/navikt/iac
 
