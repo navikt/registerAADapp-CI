@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
+      - image: circleci/node:10.0.0
       - image: northgrove/registeraadapp-ci
     steps:
       - run: 
