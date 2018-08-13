@@ -24,7 +24,7 @@ jobs:
     #working_directory: /
 workflows:
   version: 2
-  build:
+  build_and_apply:
     jobs:
       - build
       - apply:
