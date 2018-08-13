@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - checkout
-      - run: node ./registeraadapp-ci/app.js
+      - run: node ~/app.js
 
   
 
