@@ -12,9 +12,9 @@ jobs:
       #- run: node ~/project/app.js
       - setup_remote_docker
       - run: |
-          docker create -v /cfg --name registeraadapp northgrove\registeraadapp-ci /bin/true
+          docker create -v /cfg --name registeraadapp northgrove/registeraadapp-ci /bin/true
           docker cp ~/project/applications.yaml registeraadapp:/cfg
-          docker run --volumes-from registeraadapp northgrove\registeraadapp-ci
+          docker run --volumes-from registeraadapp northgrove/registeraadapp-ci
 
   
 
