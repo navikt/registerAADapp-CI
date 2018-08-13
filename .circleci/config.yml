@@ -25,6 +25,6 @@ workflows:
     jobs:
       - build
       - apply:
-        - requires:
-          - build
+          requires:
+            - build
     
