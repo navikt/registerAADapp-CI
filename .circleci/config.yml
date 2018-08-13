@@ -9,8 +9,8 @@ jobs:
 
     #working_directory: github.com/navikt/iac
 
-    #steps:
-    #  - checkout
+    steps:
+      - checkout
 
     
     #working_directory: /
