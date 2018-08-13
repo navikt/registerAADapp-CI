@@ -12,6 +12,9 @@ jobs:
     docker:
       - image: northgrove/registeraadapp-ci
     
+    steps:
+      - run:
+    
     #working_directory: github.com/navikt/iac
 
     #steps:#
