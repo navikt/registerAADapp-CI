@@ -6,7 +6,7 @@ jobs:
       - image: circleci/node:10.0.0
       - image: northgrove/registeraadapp-ci
     steps:
-      - run: 
+      - checkout
 
     #working_directory: github.com/navikt/iac
 
