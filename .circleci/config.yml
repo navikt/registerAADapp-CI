@@ -4,10 +4,14 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:10.0.0
-      - image: northgrove/registeraadapp-ci
+
     steps:
       - checkout
-
+  
+  apply:
+    docker:
+      - image: northgrove/registeraadapp-ci
+    
     #working_directory: github.com/navikt/iac
 
     #steps:
@@ -15,9 +19,12 @@ jobs:
 
     
     #working_directory: /
-#workflows:
-#  version: 2
-#  build:
-#    jobs:
-#      - build
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
+      - apply:
+        - requires:
+          - build
     
