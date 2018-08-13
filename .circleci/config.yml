@@ -13,7 +13,7 @@ jobs:
       - image: northgrove/registeraadapp-ci
     
     steps:
-      - run:
+      - checkout
     
     #working_directory: github.com/navikt/iac
 
