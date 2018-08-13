@@ -16,7 +16,6 @@ Applications:
     replyURLs: 
     - - 'https://localhost/callback'
       - 'https://app.trygdeetaten.no/callback'
-      - 'https://app2.trygdeetaten.no/callback'
     owners: 
     - - 'kjetil.nordlund@trygdeetaten.no'
       - 'kn@navq.onmicrosoft.com'
