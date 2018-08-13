@@ -12,7 +12,7 @@ jobs:
           at: .    
 
     docker:
-      - image: northgrove/regsiteraadapp-ci
+      - image: northgrove/registeraadapp-ci
           
 
     
