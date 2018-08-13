@@ -10,7 +10,7 @@ jobs:
       - checkout
       #- run: npm install
       #- run: node ~/project/app.js
-      - setup_remote_docker:
+      - setup_remote_docker
       - run: |
           docker create -v /cfg --name registeraadapp northgrove\registeraadapp-ci /bin/true
           docker cp ~/project/applications.yaml registeraadapp:/cfg
