@@ -12,6 +12,7 @@ Applications:
       - 'https://localhost/callback'
     owners: 
     - - 'kjetil.nordlund@trygdeetaten.no'
+      - 'kn@navq.onmicrosoft.com'
   - name: 'kn test app 109'
     replyURLs: 
     - - 'https://localhost/callback'
