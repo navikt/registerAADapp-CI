@@ -11,12 +11,13 @@ jobs:
       #- run: npm install
       #- run: node ~/project/app.js
       - setup_remote_docker
+          environment:
+            apiURI: $apiURI
       - run: |
           docker create -v /app --name registeraadapp northgrove/registeraadapp-ci /bin/true
           docker cp ~/project/applications.yaml registeraadapp:/app
           docker run --volumes-from registeraadapp northgrove/registeraadapp-ci
-          environment:
-            apiURI: $apiURI
+
 
   
 
