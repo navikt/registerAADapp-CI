@@ -15,6 +15,8 @@ jobs:
           docker create -v /app --name registeraadapp northgrove/registeraadapp-ci /bin/true
           docker cp ~/project/applications.yaml registeraadapp:/app
           docker run --volumes-from registeraadapp northgrove/registeraadapp-ci
+          environment:
+            apiURI: $apiURI
 
   
 
