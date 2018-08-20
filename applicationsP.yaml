@@ -1,0 +1,8 @@
+Applications:
+  - name: "kn test app 107"
+    replyURLs: 
+    - - 'https://localhost/callback'
+      - 'https://app.trygdeetaten.no/callback'
+    owners: 
+    - - 'kn@navq.onmicrosoft.com'
+      - 'kjetil.nordlund@trygdeetaten.no'
