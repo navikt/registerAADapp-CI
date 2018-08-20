@@ -16,7 +16,11 @@ jobs:
           docker create -v /app --name registeraadapp northgrove/registeraadapp-ci /bin/true
           docker cp ~/project/applicationsQ.yaml registeraadapp:/app
           docker cp ~/project/applicationsP.yaml registeraadapp:/app
-          docker run --volumes-from registeraadapp -e apiURIQ=$apiURIQ apiURIP=$apiURIP northgrove/registeraadapp-ci
+          docker run /
+          --volumes-from registeraadapp /
+          -e apiURIQ=$apiURIQ /
+          apiURIP=$apiURIP /
+          northgrove/registeraadapp-ci
           
   
 
